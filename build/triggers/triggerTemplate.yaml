@@ -47,7 +47,7 @@ spec:
         - name: appGroup
           value: Liberty
         - name: quay-io-account
-          value: "mrobertsredhat"
+          value: "shaneva"
         - name: quay-io-repository
           value: "liberty-rest"
         - name: quay-io-image-tag-name
