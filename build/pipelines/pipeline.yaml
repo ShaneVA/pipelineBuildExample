@@ -7,7 +7,7 @@ metadata:
     app.kubernetes.io/instance: liberty-rest-app
     pipeline.openshift.io/type: kubernetes
   name: liberty-rest-app
-  namespace: liberty-rest
+  namespace: shane-rest
 spec:
   resources:
   - name: app-source

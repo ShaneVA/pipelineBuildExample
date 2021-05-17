@@ -2,4 +2,4 @@ apiVersion: image.openshift.io/v1
 kind: ImageStream
 metadata:
   name: liberty-rest-app
-  namespace: liberty-rest
+  namespace: shane-rest
