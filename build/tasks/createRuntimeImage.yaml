@@ -27,7 +27,7 @@ spec:
         - |-
           echo "FROM $(resources.inputs.intermediate-image.url) as intermediate-image" > ext-dockerfile.gen
           echo "FROM docker.io/openliberty/open-liberty as runtime-image" >> ext-dockerfile.gen
-          echo "COPY --from=intermediate-image /tmp/src/target/liberty-rest-app.war /config/apps/liberty-rest-app.war" >> ext-dockerfile.gen
+          echo "COPY --from=intermediate-image /tmp/src/target/shane-rest-app.war /config/apps/shane-rest-app.war" >> ext-dockerfile.gen
           echo "COPY --from=intermediate-image /tmp/src/src/main/liberty/config/server.xml /config/server.xml" >> ext-dockerfile.gen
           echo "------------------------------"
           cat ext-dockerfile.gen

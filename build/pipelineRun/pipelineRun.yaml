@@ -1,20 +1,20 @@
 apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
 metadata:
-  generateName: liberty-rest-app-run-pr-
+  generateName: shane-rest-app-run-pr-
 spec:
   pipelineRef:
-    name: liberty-rest-app
+    name: shane-rest-app
   resources:
     - name: app-source
       resourceRef:
-        name: liberty-rest-app-source-code
+        name: shane-rest-app-source-code
     - name: intermediate-image
       resourceRef:
         name: intermediate
     - name: runtime-image
       resourceRef:
-        name: liberty-rest-app
+        name: shane-rest-app
   params:
     - name: templateFileName
       value: build/template/deploy-app-template.yaml
