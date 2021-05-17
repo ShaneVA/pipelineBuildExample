@@ -32,7 +32,7 @@ spec:
           echo "------------------------------"
           cat ext-dockerfile.gen
           echo "------------------------------"
-      image: registry.redhat.io/ocp-tools-4-tech-preview/source-to-image-rhel8 #registry.redhat.io/ocp-tools-43-tech-preview/source-to-image-rhel8
+      image: registry.redhat.io/ocp-tools-43-tech-preview/source-to-image-rhel8
       volumeMounts:
         - name: envparams
           mountPath: /env-params

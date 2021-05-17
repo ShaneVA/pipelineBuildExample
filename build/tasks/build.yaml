@@ -53,7 +53,7 @@ spec:
           echo "------------------------------"
           cat env-file
           echo "------------------------------"
-      image: registry.redhat.io/ocp-tools-4-tech-preview/source-to-image-rhel8 #registry.redhat.io/ocp-tools-43-tech-preview/source-to-image-rhel8
+      image: registry.redhat.io/ocp-tools-43-tech-preview/source-to-image-rhel8
       volumeMounts:
         - name: envparams
           mountPath: /env-params
@@ -70,7 +70,7 @@ spec:
         - /gen-source/Dockerfile.gen
         - '--environment-file'
         - /env-params/env-file
-      image: registry.redhat.io/ocp-tools-4-tech-preview/source-to-image-rhel8 #registry.redhat.io/ocp-tools-43-tech-preview/source-to-image-rhel8
+      image: registry.redhat.io/ocp-tools-43-tech-preview/source-to-image-rhel8
       volumeMounts:
         - name: gen-source
           mountPath: /gen-source
