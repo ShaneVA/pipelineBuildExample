@@ -16,3 +16,5 @@ oc adm policy add-scc-to-user privileged -z default -n shane-rest
 oc adm policy add-scc-to-user privileged -z builder -n shane-rest
 oc adm policy add-scc-to-user privileged -z deployer -n shane-rest
 oc adm policy add-scc-to-user privileged -z pipeline -n shane-rest
+echo "Creat quay secret..."
+oc create --save-config=true -f shaneva-secret.yaml
