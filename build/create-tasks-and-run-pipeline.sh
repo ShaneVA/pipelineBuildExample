@@ -18,3 +18,7 @@ oc adm policy add-scc-to-user privileged -z deployer -n shane-rest
 oc adm policy add-scc-to-user privileged -z pipeline -n shane-rest
 echo "Creat quay secret..."
 oc create --save-config=true -f shaneva-secret.yaml
+
+sleep 3
+echo "Test the pipeline..."
+oc create -f pipelineRun/pipelineRun.yaml
