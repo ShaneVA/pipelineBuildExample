@@ -1,7 +1,7 @@
 apiVersion: triggers.tekton.dev/v1alpha1
 kind: TriggerTemplate
 metadata:
-  name: liberty-rest-trigger-pipeline-template
+  name: shane-rest-trigger-pipeline-template
 spec:
   params:
   - name: gitrevision
@@ -43,13 +43,13 @@ spec:
         - name: templateFileName
           value: build/template/deploy-app-template.yaml
         - name: appName
-          value: liberty-rest
+          value: shane-rest
         - name: appGroup
           value: Liberty
         - name: quay-io-account
           value: "shaneva"
         - name: quay-io-repository
-          value: "liberty-rest"
+          value: "shane-rest"
         - name: quay-io-image-tag-name
           value: "latest"
         - name: title

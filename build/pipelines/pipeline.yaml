@@ -22,7 +22,7 @@ spec:
     default: build/template/deploy-app-template.yaml
   - name: appName
     type: string
-    default: liberty-rest
+    default: shane-rest
   - name: appGroup
     type: string
     default: Liberty
@@ -31,7 +31,7 @@ spec:
     default: ""
   - name: quay-io-repository
     type: string
-    default: "liberty-rest"
+    default: "shane-rest"
   - name: quay-io-image-tag-name
     type: string
     default: "latest"

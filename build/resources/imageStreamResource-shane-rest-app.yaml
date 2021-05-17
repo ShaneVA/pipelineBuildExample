@@ -7,5 +7,5 @@ spec:
   params:
   - name: url
     value: quay.io/shaneva/shane-rest/shane-rest-app 
-    # image-registry.openshift-image-registry.svc:5000/liberty-rest/shane-rest-app
+    # image-registry.openshift-image-registry.svc:5000/shane-rest/shane-rest-app
   type: image 
