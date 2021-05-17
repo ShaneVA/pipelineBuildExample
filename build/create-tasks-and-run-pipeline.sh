@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Create tasks..."
 oc create --save-config=true -f image-streams/imageStream-shane-rest-app.yaml 
 oc create --save-config=true -f persistentVolumes/task-cache-pvc.yaml 
