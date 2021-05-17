@@ -6,5 +6,6 @@ metadata:
 spec:
   params:
   - name: url
-    value: image-registry.openshift-image-registry.svc:5000/liberty-rest/shane-rest-app
+    value: quay.io/shaneva/shane-rest/shane-rest-app 
+    # image-registry.openshift-image-registry.svc:5000/liberty-rest/shane-rest-app
   type: image 

@@ -6,5 +6,5 @@ metadata:
 spec:
   params:
   - name: url
-    value: https://github.com/marrober/pipelineBuildExample.git
+    value: https://github.com/ShaneVA/pipelineBuildExample
   type: git
