@@ -46,17 +46,7 @@ spec:
       volumeMounts:
         - name: pipeline-cache
           mountPath: /var/lib/containers
----
-apiVersion: tekton.dev/v1beta1
-kind: TaskRun
-metadata:
-  name: mytaskrun
-  namespace: default
-spec:
-  taskRef:
-    name: mytask
-  podTemplate:
-    volumes:
+  volumes:
     - name: pipeline-cache
       persistentVolumeClaim:
         claimName: pipeline-task-cache-pvc
